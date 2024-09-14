@@ -1,0 +1,15 @@
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.AssemblyInfoInputs.cache
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.AssemblyInfo.cs
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.csproj.CoreCompileInputs.cache
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.sourcelink.json
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/bin/Debug/net8.0/ElementalWords
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/bin/Debug/net8.0/ElementalWords.deps.json
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/bin/Debug/net8.0/ElementalWords.runtimeconfig.json
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/bin/Debug/net8.0/ElementalWords.dll
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/bin/Debug/net8.0/ElementalWords.pdb
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.dll
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/refint/ElementalWords.dll
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.pdb
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ElementalWords.genruntimeconfig.cache
+/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/Debug/net8.0/ref/ElementalWords.dll
