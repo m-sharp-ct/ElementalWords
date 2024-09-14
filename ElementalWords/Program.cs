@@ -1,6 +1,8 @@
-﻿namespace ElementalWords;
+﻿using System.Text.RegularExpressions;
 
-public class Program
+namespace ElementalWords;
+
+public partial class Program
 {
     /// <summary>
     /// List of Elements in the Periodic Table
@@ -36,4 +38,25 @@ public class Program
     
     // Use this so that I will be able to iterate over the Symbol and Name later
     private static readonly Dictionary<string, string> ElementsDictionary = new();
+
+    private static void Main()
+    {
+        foreach (var (symbol, name) in Elements)
+        {
+            ElementsDictionary[symbol] = name;
+        }
+        Console.WriteLine("Please enter a word you'd like to form using elements from the periodic table");
+        var input = Console.ReadLine();
+        // Sanity check
+        if (string.IsNullOrEmpty(input)) return;
+        // Checks string comprised of letters only
+        var isLetters = IsLettersRegex().Match(input);
+        if (isLetters.Success)
+        {
+            // Go into forms. Consider Single Responsibility pattern
+        }
+    }
+
+    [GeneratedRegex("^[a-zA-z]*$")]
+    private static partial Regex IsLettersRegex();
 }
