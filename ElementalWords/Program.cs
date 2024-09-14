@@ -53,8 +53,14 @@ public partial class Program
         var isLetters = IsLettersRegex().Match(input);
         if (isLetters.Success)
         {
-            // Go into forms. Consider Single Responsibility pattern
+            var formations = ElementalForms(input);
         }
+    }
+    
+    private static List<List<string>> ElementalForms(string word)
+    {
+        var forms = new List<List<string>>();
+        return forms;
     }
 
     [GeneratedRegex("^[a-zA-z]*$")]
