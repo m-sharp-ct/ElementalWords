@@ -48,7 +48,11 @@ public partial class Program
             Console.WriteLine("Please enter a word you'd like to form using elements from the periodic table");
             var input = Console.ReadLine();
             // Sanity check
-            if (string.IsNullOrEmpty(input)) return;
+            if (string.IsNullOrEmpty(input))
+            {
+                Main();
+            }
+            
             // Checks string comprised of letters only
             var isLetters = IsLettersRegex().Match(input);
             if (!isLetters.Success)
@@ -64,7 +68,10 @@ public partial class Program
                 Main();
             }
 
-            foreach (var combination in combinations) Console.WriteLine(string.Join(", ", combination));
+            foreach (var combination in combinations)
+            {
+                Console.WriteLine(string.Join(", ", combination));
+            }
         }
     }
 
