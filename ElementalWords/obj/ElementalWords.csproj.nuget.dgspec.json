@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords.csproj": {}
+    "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords/ElementalWords.csproj": {}
   },
   "projects": {
-    "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords.csproj": {
+    "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords/ElementalWords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords.csproj",
+        "projectUniqueName": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords/ElementalWords.csproj",
         "projectName": "ElementalWords",
-        "projectPath": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords.csproj",
+        "projectPath": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords/ElementalWords.csproj",
         "packagesPath": "/Users/matt.sharp/.nuget/packages/",
-        "outputPath": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/obj/",
+        "outputPath": "/Users/matt.sharp/Documents/Sandbox/ElementalWords/ElementalWords/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/matt.sharp/.nuget/NuGet/NuGet.Config"
@@ -33,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

@@ -107,11 +107,13 @@ public partial class Program
         {
             var symbol = word.Substring(start, end - start).ToLower();
             symbol = char.ToUpper(symbol[0]) + symbol.Substring(1);
-            if (!Elements.TryGetValue(symbol, out var element)) continue;
-            path.Add($"{element} ({symbol})");
-            // Make use of recursion to carry on with the rest of the word (making the formation)
-            TrackIndexOfInput(word, end, path, formationList);
-            path.RemoveAt(path.Count - 1);
+            if (Elements.TryGetValue(symbol, out var element))
+            {
+                path.Add($"{element} ({symbol})");
+                // Make use of recursion to carry on with the rest of the word (making the formation)
+                TrackIndexOfInput(word, end, path, formationList);
+                path.RemoveAt(path.Count - 1);
+            }
         }
     }
 
