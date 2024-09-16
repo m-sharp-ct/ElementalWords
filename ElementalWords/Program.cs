@@ -82,9 +82,9 @@ public partial class Program
     /// <returns></returns>
     private static List<List<string>> ElementalForms(string input)
     {
-        var forms = new List<List<string>>();
-        TrackIndexOfInput(input, 0, [], forms);
-        return forms;
+        var formations = new List<List<string>>();
+        TrackIndexOfInput(input, 0, [], formations);
+        return formations;
     }
 
     /// <summary>
@@ -93,13 +93,13 @@ public partial class Program
     /// </summary>
     /// <param name="word">Word from user <see cref="input"/></param>
     /// <param name="start">Index to start from the <see cref="word"/></param>
-    /// <param name="path">Current location of the process</param>
-    /// <param name="formationList">The result of the <see cref="path"/> process</param>
-    private static void TrackIndexOfInput(string word, int start, List<string> path, List<List<string>> formationList)
+    /// <param name="location">Current location of the process</param>
+    /// <param name="formationList">The result of the <see cref="location"/> process</param>
+    private static void TrackIndexOfInput(string word, int start, List<string> location, List<List<string>> formationList)
     {
         if (start == word.Length)
         {
-            formationList.Add([..path]);
+            formationList.Add([..location]);
             return;
         }
         
@@ -109,10 +109,10 @@ public partial class Program
             symbol = char.ToUpper(symbol[0]) + symbol.Substring(1);
             if (Elements.TryGetValue(symbol, out var element))
             {
-                path.Add($"{element} ({symbol})");
+                location.Add($"{element} ({symbol})");
                 // Make use of recursion to carry on with the rest of the word (making the formation)
-                TrackIndexOfInput(word, end, path, formationList);
-                path.RemoveAt(path.Count - 1);
+                TrackIndexOfInput(word, end, location, formationList);
+                location.RemoveAt(location.Count - 1);
             }
         }
     }
